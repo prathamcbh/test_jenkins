@@ -1,5 +1,5 @@
 # FROM yeasy/simple-web:latest
-FROM ubuntu:18.04
+FROM debian
 RUN  apt-get update
 RUN  apt-get install -y apache2 curl net-tools
 COPY ./index.html /var/www/html/index.html
